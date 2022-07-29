@@ -3,15 +3,15 @@ include 'koneksi.php';
 
 $nis = $_POST['nis'];
 $nama =$_POST['nama'];
-$jenisKursus=$_POST['jenisKursus'];
-$biayaKursus =$_POST['biayaKursus'];
-$jumlahAngsuran=$_POST['jumlahAngsuran'];
+$jkursus=$_POST['jkursus'];
+$biaya=$_POST['biaya'];
+$jml=$_POST['jml'];
 
-$nilaiAngsuran = $biayaKursus/$jumlahAngsuran;
-$potongan = $biayaKursus*5/100;
-$totalBayar = $biayaKursus-$potongan;
+$angsuran = $biaya/$jml;
+$pot= $biaya*5/100;
+$ttbyr= $biaya-$pot;
 
-$query = "INSERT INTO angsuran VALUES ('$nis','$nama','$jenisKursus','$biayaKursus','$jumlahAngsuran','$nilaiAngsuran','$potongan','$totalBayar')"; 
+$query = "INSERT INTO angsuran VALUES ('$nis','$nama','$jkursus','$biaya','$jml','$angsuran','$pot','$ttbyr')"; 
     mysqli_query($conn,$query);
 ?>
 <script>
