@@ -67,17 +67,17 @@
             <tr>
                 <td>Jenis Kursus</td>
                 <td>:</td>
-                <td><input type="text" name="jenisKursus" maxlength="40" size="40" /></td>
+                <td><input type="text" name="jkursus" maxlength="40" size="40" /></td>
             </tr>
             <tr>
                 <td>Biaya Kursus</td>
                 <td>:</td>
-                <td><input type="text" name="biayaKursus" size="40" placeholder="Rp." /></td>
+                <td><input type="text" name="biaya" size="40" placeholder="Rp." /></td>
             </tr>
             <tr>
                 <td>Jumlah Angsuran</td>
                 <td>:</td>
-                <td><select name="jumlahAngsuran">
+                <td><select name="jml">
                         <option>Pilih Angsuran</option>
                         <option value="3">3 Bulan</option>
                         <option value="6">6 Bulan</option>
